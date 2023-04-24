@@ -1,0 +1,327 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;300;400&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #808080;
+}
+
+header {
+  background-image: url(../images/bg-header-mobile.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.section-1 div h1 {
+  margin: 50px;
+}
+
+.section-1 div {
+  text-align: center;
+  line-height: 30px;
+}
+
+.section-1 form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+button[type="submit"]:nth-child(1){
+  background-color: #23bca5;
+  color: #ffffff;
+  width: 250px;
+  padding: 15px;
+  border-radius: 30px;
+  border: 0px;
+  box-shadow: 1px 5px 5px #23bca54c;
+  margin: 15px 15px;
+  cursor: pointer;
+}
+
+button[type="submit"]:nth-child(2) {
+  background-color: #6174ff;
+  color: #ffffff;
+  width: 250px;
+  padding: 15px;
+  border-radius: 30px;
+  border: 0px;
+  box-shadow: 1px 5px 5px #6173ff40;
+  margin: 15px 15px;
+  cursor: pointer;
+}
+
+.section-2 > div {
+  line-height: 30px;
+  text-align: center;
+}
+
+.section-2 h1 {
+  margin: 20px;
+}
+
+.section-2 p {
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.article-1 > div {
+  margin: auto;
+  padding: 10px;
+}
+
+.article-1 .sub-div > div {
+  font-size: 16px;
+  padding: 5px;
+  text-align: justify;
+  word-break: normal;
+  word-spacing: normal;
+  line-height: 30px;
+  margin: auto;
+}
+
+.article-1 .sub-div > div h2 {
+  margin: 20px;
+  padding: 0px;
+  text-align: center;
+}
+
+.article-1 div img {
+  display: block;
+  width: 90%;
+  height: auto;
+}
+
+.article-2 div img {
+  display: block;
+  width: 90%;
+  height: auto;
+  margin: auto;
+}
+
+.article-2 div h1 {
+  margin: 20px;
+}
+
+.article-2 div {
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.article-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.article-3 > div,
+p {
+  padding: 15px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+
+.article-3 > div img {
+  margin: 50px;
+}
+
+.article-3 > div p {
+  margin: 25px;
+}
+
+.article-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.article-4 > div {
+  margin: 20px;
+  padding: 15px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.footer-article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50%;
+  text-align: center;
+}
+
+.footer-article > div,
+form {
+  margin: 30px;
+  padding: 15px;
+  line-height: 40px;
+}
+
+footer {
+  background-color: #f5f6f8;
+  display: block;
+  text-align: center;
+}
+
+footer div a {
+  text-decoration: none;
+  color: #808080;
+  cursor: pointer;
+}
+
+footer div {
+  margin: 10px;
+}
+
+.footer-nav a {
+  margin: 15px;
+}
+
+/* THE MEDIA QUERRY */
+
+@media screen and (min-width:765px) {
+  header {
+    background-image: url(../images/bg-header-desktop.png);
+    margin: 0 0 20px;
+  }
+
+  header div>img{
+    display: block;
+    height: auto;
+    width: auto;
+  }
+
+  body {
+    font-family: "Bai Jamjuree", sans-serif;
+    font-size: 18px;
+    font-weight: 400px;
+    color: #808080;
+  }
+
+
+  .section-1 div {
+    width: 50%;
+    margin: auto;
+  }
+
+  .section-1 div h1 {
+    margin: 10px;
+  }
+
+  .section-1 div p {
+    font-size: 18px;
+  }
+
+  .section-1 form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-2 div p {
+    width: 60%;
+    padding: 15px;
+    margin: auto;
+  }
+
+  .article-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 50px 0;
+    width: 80%;
+  }
+
+  .article-1 div > image {
+    display: block;
+    width: auto;
+    height: auto;
+  }
+
+  .sub-div > div h2 {
+    margin: 50px;
+  }
+
+  .sub-div > div p {
+    width: 70%;
+    text-align: left;
+    margin: auto;
+    padding: 0%;
+  }
+
+  .article-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px 0;
+  }
+
+  .article-2 div img {
+    display: block;
+    width: 90%;
+    height: auto;
+    margin: auto;
+  }
+
+  .article-2 div p {
+    width: 70%;
+    margin: auto;
+  }
+
+  .article-3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 50px 0px;
+  }
+
+  .article-4 {
+    display: flex;
+    flex-direction: row;
+    margin: 50px 0px;
+    justify-content: space-around;
+  }
+
+  .article-4 > div {
+    margin: 0px;
+    padding: 5px;
+    text-align: center;
+    flex-basis: 0px;
+  }
+
+  .article-4:nth-child(5) {
+    flex-shrink: 5;
+  }
+
+  footer {
+    background-color: #f5f6f8;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  footer>div:nth-child(4){
+    align-self: flex-start;
+  } 
+}
